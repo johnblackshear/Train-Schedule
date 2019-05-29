@@ -7,7 +7,6 @@
 */
 
 html{
-	background-color:#32746D;
 	color:#011502;
 	font-family: 'Montserrat', sans-serif;
 }
@@ -23,3 +22,17 @@ h1{
 	padding:20px;
 	margin:20px auto;
 }
+
+#schedule{
+border-radius: 10px;
+}
+
+label{
+	padding: 6px 15px;
+	
+}
+
+#schedule-body{
+	margin-bottom: 30px;
+}
+
