@@ -93,3 +93,11 @@ letter-spacing: 2px;
 .card-title{
 	margin-right: 0px 40px;
 }
+#train-schedule{
+	background-color: rgba(224, 226, 219, 0.7);
+}
+
+#current-time{
+	background-color: #011502;
+	color: #70D6FF;
+}

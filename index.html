@@ -29,37 +29,37 @@
     </div>
 
     
-    <div class="row">
         <!-- train schedule -->
-        <div class="col-lg-12" id="schedule-body">
-            <div class="card" id="schedule">
-              <div class="card-header">
-                Current Train Schedule
-              </div>
-              <div class="card-body" id="train-schedule">
-                <div class="row">
-                  <div class="col-2">
-                    <h2 class="card-title" id="train-name">name</h2>
-                  </div>
-                  <div class="col-2">
-                    <h2 class="card-title" id="destination">name</h2>
-                  </div>
-                  <div class="col-2">
-                    <h2 class="card-title" id="frequency">name</h2>
-                  </div>
-                  <div class="col-2">
-                    <h2 class="card-title" id="next-arrival">name</h2>
-                  </div>
-                  <div class="col-2">
-                    <h2 class="card-title" id="minutes-away">name</h2>
-                  </div>
-                </div>
-              </div>
+        <div class="panel panel-default">
+            <div class="panel-heading text-center">
+                <h2></h2>
+                <h2 id="currentTime">The current time is: </h2>
+            </div>
+      
+        <div class="panel panel-default" id="schedule">
+            <div class="panel-heading text-center" id=""><h3>Current Train Schedule</h3></div>
+            <div class="panel-body">
+              <table class="table" id="train-schedule">
+                <thead>
+                  <tr>
+                    <th id="train-name">Train Name</th>
+                    <th id="destination">Destination</th>
+                    <th id="frequency">Frequency(min)</th>
+                    <th id="next-arrival">Next Arrival</th>
+                    <th id="minutes-away">Minutes Away</th>
+                  </tr>
+                </thead>
+      
+                <!-- Train info goes here! -->
+                <tbody class="add-row" >
+                </tbody>
+                
+              </table>
             </div>
           </div>
 
           <div class="col-lg-12">
-              <div class="card" id="schedule">
+              <div class="card" id="schedule" id="train-schedule">
                 <div class="card-header">
                   Add Train
                 </div>
