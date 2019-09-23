@@ -16,12 +16,26 @@ $(document).ready(function(){//I need jquery to run!
 	var name;
 	var destination;
 	var firstTrain;
-	var frequency;
+	var frequency = 0;
 
 	$("#add-user").on("click", function(){
 		event.preventDefault();
 
-	})
+		 name = $("#name-input").val().trim();
+		 destination = $("#destination-input").val().trim();
+		 firstTrain = $("#first-train").val().trim();
+		 frequency = $("#frequency-input").val().trim();
+
+		 database.ref().push({
+			 name: name,
+			 destination: destination,
+			 firstTrain: firstTrain,
+			 frequency: frequency,
+			 dateAdded: firebase.database.ServerValue.TIMESTAMP
+		 });
+		 $("form")[0].reset();
+
+	});
 
 
 });
